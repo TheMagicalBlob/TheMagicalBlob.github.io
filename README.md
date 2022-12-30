@@ -1,1 +1,1 @@
-[(Load As Site)](https://themagicalblob.github.io/)
+[(Load As Site)](https://themagicalblob.github.io)
