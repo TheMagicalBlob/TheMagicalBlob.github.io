@@ -1,0 +1,11 @@
+
+p { font-family:'Franklin Gothic' }
+a { font-family:'Franklin Gothic'; color: #FFFFFF; }
+.Sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 300px;
+    border: 3px inset #FF00FF;
+}
