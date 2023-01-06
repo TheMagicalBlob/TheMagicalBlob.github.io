@@ -1300,7 +1300,7 @@ Spawn Vehicle...             0x405065      0x0000
 Collision (Havok)...         0x407016      0x0000
                              0x40703E      0xE900000000 // Push
                              0x40715A      0xE900000000 // Pop
-                             0x18DE2E0     0xC3         // Skip Menu Contents For Memory Reasons
+                             0x18DE2E0     0xE989C50000 // Skip Most Menu Contents For Memory Reasons
 
 Game Objects...              0x40727F      0x0000
                              0x4072A7      0xE900000000 // Push
@@ -1311,27 +1311,29 @@ Levels...                    0x4073D0      0x0000
                              0x408CF3      0xE900000000 // Pop  (E908 For Two Levels... Menus)
                              0x4085D9      0x00         // Misc. Options
 
-Gameplay...                  0x3D7D50      0x000000     // Gameplay Menu Jump
+Gameplay...
+                             -----------------------------------------------------------------------------
+                             0x3D7D50      0x000000     // Gameplay Menu Jump                            |
+                             0x3DA85A      0x0000       // IGCs Menu Jump                                |
+                             0x3D7D79      0xE900000000 // Gameplay Push 1                               |
+                             0x3DA63D      0xE900000000 // Gameplay Pop  1                               |
+                             0x3D7D9C      0xE900000000 // StateScripts Push                             |
+                             0x3DA87C      0xE900000000 // IGCs Push                                     |
+                             0x3DA9BA      0xE900000000 // IGCs Pop                                      |---[!!! == SKIP TO AVOID MEMORY ERROR IF YOU'RE LOADING AS MUCH AS POSSIBLE]
+                             0x3E806C      0xE900000000 // State Scripts Pop                             |
+                             0x17176A0     0xC3         // Select Region By Name Menu                    |
+                             0x16186D0     0xC3         // Select State Scripts Menu                     |
+                             0x161AC50     0xC3         // IGCs Menu                                     |
+                             0x72D480      0xC3         // Gestures Menu                                 |
+                             0x16186D0     0xC3         // State Scripts Menu                            |
+                             0x3B0EB2      0xE900000000 // Demo Mode Push 1                              |
+                             0x3B10F3      0xE900000000 // Demo Mode Pop 1                               |
+                             0x19CA02F     0xE900000000 // Demo Mode Push 2                              |
+                             0x19CA23A     0xE900000000 // Demo Mode Pop 2                               |
+                             -----------------------------------------------------------------------------
                              0x3E87C8      0x0000       // Gameplay Part 2 Jump
-                             0x3DA85A      0x0000       // IGCs Menu Jump
-                             0x3D7D79      0xE900000000 // Gameplay Push 1
-                             0x3DA63D      0xE900000000 // Gameplay Pop 1
-                             0x3D7D9C      0xE900000000 // StateScripts Push
-                             0x3DA87C      0xE900000000 // IGCs Push
-                             0x3DA9BA      0xE900000000 // IGCs Pop
-                             0x3E806C      0xE900000000 // Gameplay Pop 3
                              0x3E87EA      0xE900000000 // Gameplay Part 2 Push
                              0x3E9506      0xE900000000 // Gameplay Part 2 Pop
-                             0x3E87EA      0xE900000000 // Gameplay Push 2
-                             0x3B0EB2      0xE900000000 // Demo Mode Push 1
-                             0x3B10F3      0xE900000000 // Demo Mode Pop 1
-                             0x19CA02F     0xE900000000 // Demo Mode Push 2
-                             0x19CA23A     0xE900000000 // Demo Mode Pop 2
-                             0x17176A0     0xC3         // Select Region By Name Menu
-                             0x16186D0     0xC3         // Select State Scripts Menu
-                             0x161AC50     0xC3         // IGCs Menu
-                             0x72D480      0xC3         // Gestures Menu
-                             0x16186D0     0xC3         // State Scripts Menu (Memory Preservation)
 
 Navigation...                0x40912D      0x0000
                              0x409155      0xE900000000 // Push
@@ -1359,15 +1361,17 @@ Menu...                      0x40FF86      0x0000
                              0x40FFB5      0xE900000000 // Push
                              0x4115BF      0xE900000000 // Pop
 
-Audio...                     0x15673A5     0x0000
-                             0x15673D2     0xE900000000 // Push 1
-                             0x156E314     0xE900000000 // Pop  1
+                             --------------------------------------
+Audio...                     0x15673A5     0x0000                 |
+                             0x15673D2     0xE900000000 // Push 1 |-[SKIP TO AVOID MEMORY ERROR IF LOADING AS MUCH AS POSSIBLE]
+                             0x156E314     0xE900000000 // Pop  1 |
+                             --------------------------------------
 
-Audio Output...              0x156E3BA     0x0000 smol
+Audio Output...              0x156E3BA     0x0000
                              0x156E3DC     0xE900000000 // Push
                              0x156EEC6     0xE900000000 // Pop
 
-Audio Output... Pt. 2        0x156F366     0x0000 also smol
+Audio Output... Pt. 2        0x156F366     0x0000
                              0x156F388     0xE900000000 // Push
                              0x1570A85     0xE900000000 // Pop
 
@@ -1387,11 +1391,19 @@ Vox...                       0x413475      0x0000
 Scripts...                   0x173236A     0x0000
                              0x1733078     0xE900000000 // Push
                              0x173238C     0xE900000000 // Pop
-                             0x414F7D      0x00
 
 Level Bugfix...              0x415272      0x0000
                              0x41529A      0xE900000000 // Push
                              0x415A38      0xE900000000 // Pop
+
+Cinematics...                0x24BE58      0x0000
+                             0x24BE82      0xE900000000 // Push 1
+                             0x24C5DB      0xE900000000 // Pop  1
+                             0x24CB24      0x0000
+                             0x24CB4E      0xE900000000 // Push 2
+                             0x24E28D      0xE900000000 // Pop  2
+                             0x15E8AE0     0xB001C3     // Skip "Play Cinematic..."
+                             0x15E9340     0xB001C3     // Skip "Select Cinematic..."
 
 Camera...                    0x241158      0x0000
                              0x241182      0xE900000000 // InitGuiWidgets() Push
@@ -1419,8 +1431,7 @@ Designer...                  0x24E347      0x0000
                              0x24E4DF      0xE900000000 // Pop  2
                              0x39B1E0      0xC3         // Skip Menu Content Loop
 
-Tasks...
-                             0x24E854      0x0000
+Tasks...                     0x24E854      0x0000
                              0x1643865     0x0000       // Stop Tasks From Crashing CO-OP And Multiplayer
                              0x24E5C8      0x01         // Load UC4 Tasks Menu (Play Task...)
                              0x24E88B      0xE900000000 // Push
@@ -1444,6 +1455,8 @@ DC Spawn... (Crashes)
 Complete Task... (Crashes)
 Complete SP-DLC1 Task... (Crashes)
 Complete Test Task... (Crashes)
+Play Cinematic... (Crashes)
+Select Cinematic... (Crashes)
 
 Other Skipped Options:
 GBuffer Options In "Draw Mode..." (They Can Crash The Entire PS4 OS When Selected, Massive Annoyance)
@@ -1473,7 +1486,7 @@ Select Cinematic...
 
 
 Base Offset For various toggles: 1104B1AE88
-Disable FPS: 0x1104B1AE88
+Disable FPS: 0x1104B1AE88 (Like These Two)
 Debug Mode: 0x1104B1AE79
                                                                                          ---------------------------------
                                                                                          |Uncharted: The Lost Legacy 1.09|
