@@ -3,7 +3,7 @@ a { color: #FFF; }
 body {
     color:#FFF;
     background-color: #000;
-    font-family: 'Franklin Gothic', fantasy
+    font-family: 'Franklin Gothic', sans-serif
 }
 .Blob {
     width: 100px;
@@ -17,7 +17,10 @@ body {
     left: 0px;
     width: 300px;
     border: 3px inset #F0F;
-    background-color: #111;
+    background-color: #090909;
+}
+.Sidebar * {
+    position: fixed;
 }
 H1 {
     position: fixed;
