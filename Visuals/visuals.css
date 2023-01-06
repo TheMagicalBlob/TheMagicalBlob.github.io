@@ -76,9 +76,11 @@ h1 {
 .Patches {
     position: absolute;
     left: 500px;
+    text-decoration: none;
 }
 .Patches h2 {
     position: absolute;
+    top: 50px;
     left: 300px;
     width: max-content;
 }
