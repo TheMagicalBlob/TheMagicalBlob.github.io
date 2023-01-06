@@ -3,7 +3,6 @@ body {
     background-color: #000;
     font-family: 'Franklin Gothic', sans-serif
 }
-p { position: fixed; }
 a { color: #FFF; }
 
 /*<--Sidebar-->*/
@@ -66,3 +65,10 @@ h1 {
     bottom: 12px
 }
 /*<--Sidebar-->*/
+
+/*Main Page*/
+.PageContents {
+    position: absolute;
+    
+}
+/*Main Page*/
