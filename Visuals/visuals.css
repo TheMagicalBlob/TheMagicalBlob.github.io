@@ -84,3 +84,9 @@ h1 {
     left: 300px;
     width: max-content;
 }
+/*<--Patches Page-->*/
+.PatchesPage {
+    font-family:'Franklin Gothic Medium';
+    color:#FFFFFF;
+    background-color: #000000;
+}
