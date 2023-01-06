@@ -1,15 +1,17 @@
-p { position: fixed; }
-a { color: #FFF; }
 body {
     color:#FFF;
     background-color: #000;
     font-family: 'Franklin Gothic', sans-serif
 }
-.Blob {
-    width: 100px;
-    border-radius: 50%;
-    border: 3px inset #F0F;
+p { position: fixed; }
+a { color: #FFF; }
+h1 {
+    position: fixed;
+    left: 20px;
+    top: 115px;
 }
+
+/*<--Sidebar-->*/
 .Sidebar {
     position: fixed;
     top: 0px;
@@ -22,8 +24,12 @@ body {
 .Sidebar * {
     position: fixed;
 }
-H1 {
+.Blob {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px inset #F0F;
     position: fixed;
-    left: 20px;
-    top: 115px;
+    left: 30px;
+    top: 25px
 }
+/*<--Sidebar-->*/
