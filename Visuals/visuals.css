@@ -64,11 +64,21 @@ h1 {
     left: 30px;
     bottom: 12px
 }
-/*<--Sidebar-->*/
-
-/*Main Page*/
+/*<--Main Page-->*/
 .PageContents {
     position: absolute;
-    
+    left: 306px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    border: 1px inset #F0F;
 }
-/*Main Page*/
+.Patches {
+    position: absolute;
+    left: 500px;
+}
+.Patches h2 {
+    position: absolute;
+    left: 300px;
+    width: max-content;
+}
