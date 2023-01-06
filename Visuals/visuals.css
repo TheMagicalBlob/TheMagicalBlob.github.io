@@ -32,4 +32,32 @@ h1 {
     left: 30px;
     top: 25px
 }
+.Reddit {
+    left: 21px;
+    bottom: 35px
+}
+.Reddit img {
+    width: 50px;
+    bottom: 55px;
+    left: 48px;
+    border: 1px inset #F0F;
+    padding: 1px;
+}
+.Youtube {
+    left: 175px;
+    bottom: 35px
+}
+.Youtube img {
+    width: 40px;
+    bottom: 55px;
+    left: 205px;
+    border: 1px inset #F0F;
+    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.Email {
+    left: 30px;
+    bottom: 12px
+}
 /*<--Sidebar-->*/
