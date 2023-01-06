@@ -5,11 +5,6 @@ body {
 }
 p { position: fixed; }
 a { color: #FFF; }
-h1 {
-    position: fixed;
-    left: 20px;
-    top: 115px;
-}
 
 /*<--Sidebar-->*/
 .Sidebar {
@@ -31,6 +26,16 @@ h1 {
     position: fixed;
     left: 30px;
     top: 25px
+}
+h1 {
+    position: fixed;
+    left: 20px;
+    top: 115px;
+}
+.Bliobraphy {
+    font-size: small;
+    left: 35px;
+    top: 165px;
 }
 .Reddit {
     left: 21px;
