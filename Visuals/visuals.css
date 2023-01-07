@@ -71,12 +71,12 @@ h1 {
 .PageContents {
     position: absolute;
     left: 306px;
-    top: 0px;
+    min-height: 100vh;
     bottom: 0px;
     right: 0px;
     border: 1px solid #F0F;
-    outline:  #333 solid 2px;
-    outline-offset: -3px;
+    outline:  #333 solid 7px;
+    outline-offset: -8px;
 }
 .Patches {
     position: relative;
