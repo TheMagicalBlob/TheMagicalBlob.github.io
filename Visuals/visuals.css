@@ -69,12 +69,11 @@ h1 {
 
 /*<--Main Page-->*/
 .PageContents {
-    position: relative;
-    left: 0px;
-    min-height: 100vh;
-    min-width: 100vh;/* 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 306px;
     bottom: 0px;
-    right: 0px; */
     border: 1px solid #F0F;
     outline:  #333 solid 7px;
     outline-offset: -8px;
