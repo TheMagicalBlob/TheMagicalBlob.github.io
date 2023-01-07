@@ -15,7 +15,7 @@ a { color: #FFF; }
     border: 3px inset #F0F;
     background-color: #090909;
 }
-.Sidebar * {
+.Sidebar a, img {
     position: fixed;
 }
 .Blob {
@@ -32,9 +32,11 @@ h1 {
     top: 115px;
 }
 .Bliobraphy {
+    position: relative;
     font-size: small;
     left: 35px;
     top: 165px;
+    max-width: 200px;
 }
 .Reddit {
     left: 21px;
@@ -64,6 +66,7 @@ h1 {
     left: 30px;
     bottom: 12px
 }
+
 /*<--Main Page-->*/
 .PageContents {
     position: absolute;
@@ -71,29 +74,41 @@ h1 {
     top: 0px;
     bottom: 0px;
     right: 0px;
-    border: 1px inset #F0F;
+    border: 1px solid #F0F;
+    outline:  #333 solid 2px;
+    outline-offset: -3px;
 }
 .Patches {
-    position: absolute;
-    left: 175px;
+    position: relative;
+    border: 1px solid #F0F;
+    border-top-width: 10px;
+    margin: auto;
+    top: 50px;
+    width: 750px;
+}
+.Patches * {
+    position: relative;
     text-decoration: none;
 }
 .Patches h2 {
-    position: absolute;
-    top: 40px;
-    left: 250px;
-    width: max-content;
-    border: 1px inset #F0F;
+    margin: auto;
+    top: 7px;
+    width: fit-content;
 }
 .Patches p {
-    position: absolute;
-    top: 80px;
-    left: 175px;
-    width: max-content;
+    left: 25px;
+    width: 700px;
 }
 
-/*<--Patches Page-->*/
+/*<--Patches/index.html-->*/
 .PatchesPage {
+    font-family:'Franklin Gothic Medium';
+    color:#FFFFFF;
+    background-color: #000000;
+}
+
+/*<--Applications/index.html-->*/
+.ApplicationsPage {
     font-family:'Franklin Gothic Medium';
     color:#FFFFFF;
     background-color: #000000;

@@ -1090,6 +1090,8 @@ Task & Timer Display Verticle Screen Position: 0xbde2cc (0.92 Default)
                                                                                          ---------------------------------
                                                                                          |Uncharted 2: Among Thieves 1.00|
                                                                                          ---------------------------------
+
+ Patches
 Debug Mode 0x1EB296(.elf)
 
 F; 80 bf ba 39 00 00 00
@@ -1129,6 +1131,15 @@ Disable FPS; 0x1271431
 Debug Mode; 0x127149C
 Task, Version, And Timer Display; 0x12705C9
 ? 0x1270614
+
+
+                                                                                         -------------------------------------
+                                                                                         |Uncharted 2:                   1.02|
+                                                                                         -------------------------------------
+
+
+Debug Mode 0x3F7A26 0xEB
+
                                                                                          -------------------------------------
                                                                                          |Uncharted 3: Drake's Deception 1.00|
                                                                                          -------------------------------------
