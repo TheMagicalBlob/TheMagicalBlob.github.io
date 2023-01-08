@@ -70,13 +70,13 @@ h1 {
 /*<--Main Page-->*/
 .Border {
     position: fixed;
-    top: 0vh;
+    top: 0px;
     bottom: 0px;
     left: 306px;
     right: 0px;
     min-width: 745px;
     margin: auto;
-    border: 3px double #F0F;
+    border: 4px double #F0F;
     outline:  #333 solid 7px;
     outline-offset: -8px;
 }
@@ -85,6 +85,7 @@ h1 {
     left: 306px;
     top: 0px;
     right: 0px;
+    min-width: 750px;
 }
 .Patches {
     position: relative;
