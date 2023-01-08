@@ -74,8 +74,6 @@ h1 {
     left: 306px;
     right: 0rem;
     bottom: 0rem;
-    min-width: 100vh;
-    max-zoom: 1.0;
     border: 1px solid #F0F;
     outline:  #333 solid 7px;
     outline-offset: -8px;
