@@ -69,7 +69,7 @@ h1 {
 
 /*<--Main Page-->*/
 .PageContents {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 306px;
     right: 0rem;
