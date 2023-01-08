@@ -70,7 +70,7 @@ h1 {
 /*<--Main Page-->*/
 .Border {
     position: fixed;
-    top: 0px;
+    top: 0vh;
     bottom: 0px;
     left: 306px;
     right: 0px;
