@@ -73,8 +73,8 @@ h1 {
     top: 0px;
     bottom: 0px;
     left: 306px;
-    min-width: 747px;
-    width: calc(100vw - 312px);
+    right: 0px;
+    min-width: fit-content;
     border: 3px double #F0F;
     outline:  #333 solid 7px;
     outline-offset: -8px;
