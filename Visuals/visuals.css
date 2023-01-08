@@ -33,7 +33,7 @@ h1 {
 }
 .Bliobraphy {
     position: relative;
-    font-size: small;
+    font-size: 0.75rem;
     left: 35px;
     top: 165px;
     max-width: 200px;
@@ -68,6 +68,14 @@ h1 {
 }
 
 /*<--Main Page-->*/
+
+.PageContents {
+    position: absolute;
+    left: 306px;
+    top: 0px;
+    right: 0px;
+    min-width: 800px;
+}
 .Border {
     position: fixed;
     top: 0px;
@@ -80,33 +88,27 @@ h1 {
     outline:  #333 solid 7px;
     outline-offset: -8px;
 }
-.PageContents {
-    position: absolute;
-    left: 306px;
-    top: 0px;
-    right: 0px;
-    min-width: 800px;
-}
-.Patches {
+.LinkColumns {
     position: relative;
     border: 1px solid #F0F;
     border-top-width: 10px;
-    margin: auto;
-    top: 50px;
+    margin: 50px auto;
+    top: 30px;
     width: 750px;
 }
-.Patches * {
+.LinkColumns * {
     position: relative;
     text-decoration: none;
 }
-.Patches h2 {
+.LinkColumns h2 {
     margin: auto;
     top: 7px;
     width: fit-content;
 }
-.Patches p {
-    left: 25px;
-    width: 700px;
+.LinkColumns p {
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
 }
 
 /*<--Patches/index.html-->*/
