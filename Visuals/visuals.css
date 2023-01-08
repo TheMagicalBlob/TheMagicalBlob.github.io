@@ -69,14 +69,20 @@ h1 {
 
 /*<--Main Page-->*/
 .Border {
-    
-}
-.PageContents {
     position: absolute;
     top: 0px;
     left: 306px;
     right: 0rem;
     bottom: 0rem;
+    border: 1px solid #F0F;
+    outline:  #333 solid 7px;
+    outline-offset: -8px;
+}
+.PageContents {
+    position: absolute;
+    left: 306px;
+    top: 0px;
+    right: 0px;
 }
 .Patches {
     position: relative;
