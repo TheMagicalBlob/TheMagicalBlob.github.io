@@ -1,10 +1,15 @@
 body {
     color:#FFF;
     background-color: #000;
-    font-family: 'Franklin Gothic', sans-serif
+    font-family: 'Franklin Gothic', Debug
 }
 a { color: #FFF; }
-
+@font-face {
+    font-family: Press-Gothic;
+    src: url('Fonts/Press-Gothic.ttf');
+    font-family: Debug;
+    src: url('Fonts/debug.ttf')
+}
 :root {
     --MainColour: #BB42BBBB;
     --SecondaryColour: #303030;
@@ -86,7 +91,12 @@ h1 {
     min-width: 900px;
     background-color: #070707;
 }
-
+hr {
+    position: relative;
+    border-color: var(--MainColour);
+    width: 870px;
+    margin: 60px auto 0px auto;
+}
 .Border {
     position: fixed;
     top: 0px;
@@ -102,7 +112,7 @@ h1 {
 .LinkColumns {
     position: relative;
     outline: 1px solid var(--MainColour);
-    margin: 50px auto;
+    margin: auto;
     top: 30px;
     width: 850px;
     border: solid 10px;
@@ -123,7 +133,6 @@ h1 {
     padding-bottom: 1.25rem;
     text-align: center;
 }
-
 /*<--Patches/index.html-->*/
 .PatchesPage {
     font-family:'Franklin Gothic Medium';
