@@ -68,7 +68,13 @@ h1 {
 }
 
 /*<--Main Page-->*/
-
+.TMP a {
+    position: relative;
+    left: 47px;
+    border: 2px inset #F0F;
+    width: fit-content;
+    margin-top: 10px;
+}
 .PageContents {
     position: absolute;
     left: 306px;
