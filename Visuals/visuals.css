@@ -1,9 +1,13 @@
 body {
-    color:#FFF;
-    background-color: #000;
+    color: #FFF;
+    background-color: #070707;
     font-family: 'Franklin Gothic', Debug
 }
-a { color: #FFF; }
+
+a {
+    color: #FFF;
+}
+
 @font-face {
     font-family: Press-Gothic;
     src: url('Fonts/Press-Gothic.ttf');
@@ -13,6 +17,7 @@ a { color: #FFF; }
     font-family: Debug;
     src: url('Fonts/debug.ttf')
 }
+
 :root {
     --MainColour: #BB42BBBB;
     --SecondaryColour: #303030;
@@ -20,6 +25,7 @@ a { color: #FFF; }
     --Inset: #222 #404040 #404040 #222;
     --Outset: #404040 #222 #222 #404040;
 }
+
 /*
             __________________________________________________________________________
             |||||||                       \/  Sidebar  \/                      ||||||| (Every Page)
@@ -34,9 +40,12 @@ a { color: #FFF; }
     border: 2px solid var(--MainColour);
     background-color: #111;
 }
-.Sidebar a, img {
+
+.Sidebar a,
+img {
     position: fixed;
 }
+
 .Blob {
     width: 100px;
     border-radius: 50%;
@@ -45,11 +54,13 @@ a { color: #FFF; }
     left: 30px;
     top: 25px
 }
+
 h1 {
     position: fixed;
     left: 20px;
     top: 115px;
 }
+
 .Bliobraphy {
     position: relative;
     font-size: 0.825rem;
@@ -57,10 +68,12 @@ h1 {
     top: 165px;
     max-width: 200px;
 }
+
 .Reddit {
     left: 21px;
     bottom: 35px
 }
+
 .Reddit img {
     width: 50px;
     bottom: 55px;
@@ -68,10 +81,12 @@ h1 {
     border: 1px inset var(--MainColour);
     padding: 1px;
 }
+
 .Youtube {
     left: 175px;
     bottom: 35px
 }
+
 .Youtube img {
     width: 40px;
     bottom: 55px;
@@ -81,6 +96,7 @@ h1 {
     padding-left: 2px;
     padding-right: 2px;
 }
+
 .Email {
     left: 30px;
     bottom: 12px
@@ -99,14 +115,15 @@ h1 {
     right: 7px;
     bottom: 7px;
     min-width: 900px;
-    background-color: #070707;
 }
+
 hr {
     position: relative;
     border-color: var(--MainColour);
     width: 870px;
     margin: 60px auto 0px auto;
 }
+
 .Border {
     position: fixed;
     top: 0px;
@@ -119,6 +136,7 @@ hr {
     border: solid 7px;
     border-color: var(--Outset);
 }
+
 .LinkColumns {
     position: relative;
     outline: 1px solid var(--MainColour);
@@ -128,21 +146,25 @@ hr {
     border: solid 10px;
     border-color: var(--Outset);
 }
+
 .LinkColumns * {
     position: relative;
     text-decoration: none;
 }
+
 .LinkColumns h2 {
     margin: auto;
     top: 1.25rem;
     width: fit-content;
 }
+
 .LinkColumns p {
     margin: auto;
     padding: 2rem;
     padding-bottom: 1.25rem;
     text-align: center;
 }
+
 /*
             __________________________________________________________________________
             |||||||                  \/ Patches/index.html \/                  |||||||
@@ -153,13 +175,17 @@ hr {
     font-size: 2rem;
 }
 
+li {
+    font-family: Debug;
+}
+
 /*
             __________________________________________________________________________
             |||||||               \/ Applications/index.html \/                |||||||
             --------------------------------------------------------------------------
 */
 .ApplicationsPage {
-    font-family:'Franklin Gothic Medium';
-    color:#FFF;
+    font-family: 'Franklin Gothic Medium';
+    color: #FFF;
     background-color: #000;
 }
