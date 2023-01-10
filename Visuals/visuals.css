@@ -12,7 +12,7 @@ a { color: #FFF; }
     bottom: 0px;
     left: 0px;
     width: 300px;
-    border: 3px double #F0F;
+    border: 3px double var(--MainColour);
     background-color: #090909;
 }
 .Sidebar a, img {
@@ -21,7 +21,7 @@ a { color: #FFF; }
 .Blob {
     width: 100px;
     border-radius: 50%;
-    border: 3px inset #F0F;
+    border: 3px inset var(--MainColour);
     position: fixed;
     left: 30px;
     top: 25px
@@ -46,7 +46,7 @@ h1 {
     width: 50px;
     bottom: 55px;
     left: 48px;
-    border: 1px inset #F0F;
+    border: 1px inset var(--MainColour);
     padding: 1px;
 }
 .Youtube {
@@ -57,7 +57,7 @@ h1 {
     width: 40px;
     bottom: 55px;
     left: 205px;
-    border: 1px inset #F0F;
+    border: 1px inset var(--MainColour);
     padding: 1px;
     padding-left: 2px;
     padding-right: 2px;
@@ -68,7 +68,9 @@ h1 {
 }
 
 /*<--Main Page-->*/
-
+:root {
+    --MainColour: #ff00ff67;
+}
 .PageContents {
     position: absolute;
     left: 306px;
@@ -76,6 +78,7 @@ h1 {
     right: 0px;
     min-width: 800px;
 }
+
 .Border {
     position: fixed;
     top: 0px;
@@ -84,13 +87,13 @@ h1 {
     right: 0px;
     min-width: 745px;
     margin: auto;
-    border: 4px double #F0F;
+    border: 4px double var(#000);
     outline:  #333 solid 7px;
     outline-offset: -8px;
 }
 .LinkColumns {
     position: relative;
-    border: 1px solid #F0F;
+    border: 1px solid var(--MainColour);
     border-top-width: 10px;
     margin: 50px auto;
     top: 30px;
