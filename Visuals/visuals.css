@@ -5,6 +5,11 @@ body {
 }
 a { color: #FFF; }
 
+:root {
+    --MainColour: #ff00ffBB;
+    --SecondaryColour: #303030
+}
+
 /*<--Sidebar-->*/
 .Sidebar {
     position: fixed;
@@ -12,8 +17,8 @@ a { color: #FFF; }
     bottom: 0px;
     left: 0px;
     width: 300px;
-    border: 3px double var(--MainColour);
-    background-color: #090909;
+    border: 2px inset var(--MainColour);
+    background-color: #101010;
 }
 .Sidebar a, img {
     position: fixed;
@@ -68,12 +73,10 @@ h1 {
 }
 
 /*<--Main Page-->*/
-:root {
-    --MainColour: #ff00ff67;
-}
+
 .PageContents {
     position: absolute;
-    left: 306px;
+    left: 305px;
     top: 0px;
     right: 0px;
     min-width: 800px;
@@ -83,12 +86,12 @@ h1 {
     position: fixed;
     top: 0px;
     bottom: 0px;
-    left: 306px;
+    left: 305px;
     right: 0px;
     min-width: 745px;
     margin: auto;
-    border: 4px double var(#000);
-    outline:  #333 solid 7px;
+    border: 4px double var(--MainColour);
+    outline: var(--SecondaryColour) solid 7px;
     outline-offset: -8px;
 }
 .LinkColumns {
