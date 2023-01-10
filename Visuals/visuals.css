@@ -7,6 +7,9 @@ a { color: #FFF; }
 @font-face {
     font-family: Press-Gothic;
     src: url('Fonts/Press-Gothic.ttf');
+}
+
+@font-face {
     font-family: Debug;
     src: url('Fonts/debug.ttf')
 }
@@ -145,10 +148,9 @@ hr {
             |||||||                  \/ Patches/index.html \/                  |||||||
             --------------------------------------------------------------------------
 */
-.PatchesPage {
-    font-family:'Franklin Gothic Medium', Debug;
-    color:#FFF;
-    background-color: #070707;
+.GameTitle {
+    font-family: Press-Gothic;
+    font-size: 2rem;
 }
 
 /*
