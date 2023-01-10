@@ -6,19 +6,22 @@ body {
 a { color: #FFF; }
 
 :root {
-    --MainColour: #ff00ffBB;
-    --SecondaryColour: #303030
+    --MainColour: #BB42BBBB;
+    --SecondaryColour: #303030;
+    /* Made My Own In/Outset Shading Because Chrome Won't Display It Right (Darker half Is Just All Black Where Firefox Shows A Darker Gray)*/
+    --Inset: #222 #444 #444 #222;
+    --Outset: #444 #222 #222 #444;
 }
 
 /*<--Sidebar-->*/
 .Sidebar {
     position: fixed;
-    top: 0vh;
+    top: 0px;
     bottom: 0px;
     left: 0px;
     width: 300px;
-    border: 2px inset var(--MainColour);
-    background-color: #101010;
+    border: 2px solid var(--MainColour);
+    background-color: #111;
 }
 .Sidebar a, img {
     position: fixed;
@@ -92,18 +95,18 @@ h1 {
     right: 0px;
     min-width: 845px;
     margin: auto;
-    border: 4px double var(--MainColour);
-    outline: var(--SecondaryColour) solid 7px;
-    outline-offset: -8px;
+    outline: 4px double var(--MainColour);
+    border: solid 7px;
+    border-color: var(--Outset);
 }
 .LinkColumns {
     position: relative;
-    border: 1px solid var(--MainColour);
+    outline: 1px solid var(--MainColour);
     margin: 50px auto;
     top: 30px;
     width: 850px;
-    outline: #444 inset 10px;
-    outline-offset: -11px;
+    border: solid 10px;
+    border-color: var(--Outset);
 }
 .LinkColumns * {
     position: relative;
@@ -117,7 +120,7 @@ h1 {
 .LinkColumns p {
     margin: auto;
     padding: 2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
     text-align: center;
 }
 
