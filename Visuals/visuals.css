@@ -9,8 +9,8 @@ a { color: #FFF; }
     --MainColour: #BB42BBBB;
     --SecondaryColour: #303030;
     /* Made My Own In/Outset Shading Because Chrome Won't Display It Right (Darker half Is Just All Black Where Firefox Shows A Darker Gray)*/
-    --Inset: #222 #444 #444 #222;
-    --Outset: #444 #222 #222 #444;
+    --Inset: #222 #404040 #404040 #222;
+    --Outset: #404040 #222 #222 #404040;
 }
 
 /*<--Sidebar-->*/
