@@ -79,7 +79,7 @@ h1 {
     left: 305px;
     top: 0px;
     right: 0px;
-    min-width: 800px;
+    min-width: 900px;
 }
 
 .Border {
@@ -88,7 +88,7 @@ h1 {
     bottom: 0px;
     left: 305px;
     right: 0px;
-    min-width: 745px;
+    min-width: 845px;
     margin: auto;
     border: 4px double var(--MainColour);
     outline: var(--SecondaryColour) solid 7px;
@@ -97,10 +97,11 @@ h1 {
 .LinkColumns {
     position: relative;
     border: 1px solid var(--MainColour);
-    border-top-width: 10px;
     margin: 50px auto;
     top: 30px;
-    width: 750px;
+    width: 850px;
+    outline: #444 inset 10px;
+    outline-offset: -11px;
 }
 .LinkColumns * {
     position: relative;
@@ -108,12 +109,13 @@ h1 {
 }
 .LinkColumns h2 {
     margin: auto;
-    top: 7px;
+    top: 1.25rem;
     width: fit-content;
 }
 .LinkColumns p {
     margin: auto;
-    padding: 1rem;
+    padding: 2rem;
+    padding-bottom: 1.5rem;
     text-align: center;
 }
 
