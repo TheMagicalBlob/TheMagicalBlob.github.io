@@ -79,7 +79,9 @@ h1 {
     left: 305px;
     top: 0px;
     right: 0px;
+    bottom: 0px;
     min-width: 900px;
+    background-color: #070707;
 }
 
 .Border {
@@ -122,13 +124,13 @@ h1 {
 /*<--Patches/index.html-->*/
 .PatchesPage {
     font-family:'Franklin Gothic Medium';
-    color:#FFFFFF;
-    background-color: #000000;
+    color:#FFF;
+    background-color: #000;
 }
 
 /*<--Applications/index.html-->*/
 .ApplicationsPage {
     font-family:'Franklin Gothic Medium';
-    color:#FFFFFF;
-    background-color: #000000;
+    color:#FFF;
+    background-color: #000;
 }
