@@ -84,10 +84,10 @@ h1 {
 
 .PageContents {
     position: absolute;
-    left: 305px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
+    left: 312px;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
     min-width: 900px;
     background-color: #070707;
 }
