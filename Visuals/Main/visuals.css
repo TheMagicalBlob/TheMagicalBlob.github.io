@@ -1,21 +1,11 @@
-body {
-    color: #FFF;
-    background-color: #070707;
-    font-family: 'Franklin Gothic', Debug
-}
-
-a {
-    color: #FFF;
-}
-
 @font-face {
     font-family: Press-Gothic;
-    src: url('Fonts/Press-Gothic.ttf');
+    src: url('../Fonts/Press-Gothic.ttf');
 }
 
 @font-face {
     font-family: Debug;
-    src: url('Fonts/debug.ttf')
+    src: url('../Fonts/debug.ttf')
 }
 
 :root {
@@ -28,7 +18,7 @@ a {
 
 /*
             __________________________________________________________________________
-            |||||||                       \/  Sidebar  \/                      ||||||| (Every Page)
+            |||||||                       \/  Sidebar  \/                      |||||||
             --------------------------------------------------------------------------
 */
 .Sidebar {
@@ -103,10 +93,19 @@ h1 {
 }
 
 /*
-            __________________________________________________________________________
-            |||||||                        \/ Main Page \/                     |||||||
-            --------------------------------------------------------------------------
+            _________________________________________________________________
+            |||||||               \/ Main Content Area \/             |||||||
+            -----------------------------------------------------------------
 */
+body {
+    color: #FFF;
+    background-color: #070707;
+    font-family: 'Franklin Gothic', Debug
+}
+
+a {
+    color: #FFF;
+}
 
 .PageContents {
     position: absolute;
@@ -163,29 +162,4 @@ hr {
     padding: 2rem;
     padding-bottom: 1.25rem;
     text-align: center;
-}
-
-/*
-            __________________________________________________________________________
-            |||||||                  \/ Patches/index.html \/                  |||||||
-            --------------------------------------------------------------------------
-*/
-.GameTitle {
-    font-family: Press-Gothic;
-    font-size: 2rem;
-}
-
-li {
-    font-family: Debug;
-}
-
-/*
-            __________________________________________________________________________
-            |||||||               \/ Applications/index.html \/                |||||||
-            --------------------------------------------------------------------------
-*/
-.ApplicationsPage {
-    font-family: 'Franklin Gothic Medium';
-    color: #FFF;
-    background-color: #000;
 }

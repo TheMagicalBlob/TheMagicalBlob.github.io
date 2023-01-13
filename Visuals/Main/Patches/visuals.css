@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Press-Gothic;
+    src: url('/Visuals/Fonts/Press-Gothic.ttf');
+}
+
+@font-face {
+    font-family: Debug;
+    src: url('/Visuals/Fonts/debug.ttf')
+}
+
+:root {
+    --MainColour: #BB42BBBB;
+    --SecondaryColour: #303030;
+    /* Made My Own In/Outset Shading Because Chrome Won't Display It Right (Darker half Is Just All Black Where Firefox Shows A Darker Gray)*/
+    --Inset: #222 #404040 #404040 #222;
+    --Outset: #404040 #222 #222 #404040;
+}
+
+/*
+            __________________________________________________________________________
+            |||||||                       \/  Sidebar  \/                      |||||||
+            --------------------------------------------------------------------------
+*/
+.Sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 300px;
+    border: 2px solid var(--MainColour);
+    background-color: #111;
+}
+
+.Sidebar a,
+img {
+    position: fixed;
+}
+
+.Blob {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px inset var(--MainColour);
+    position: fixed;
+    left: 30px;
+    top: 25px
+}
+
+h1 {
+    position: fixed;
+    left: 20px;
+    top: 115px;
+}
+
+.Bliobraphy {
+    position: relative;
+    font-size: 0.825rem;
+    left: 35px;
+    top: 165px;
+    max-width: 200px;
+}
+
+.Reddit {
+    left: 21px;
+    bottom: 35px
+}
+
+.Reddit img {
+    width: 50px;
+    bottom: 55px;
+    left: 48px;
+    border: 1px inset var(--MainColour);
+    padding: 1px;
+}
+
+.Youtube {
+    left: 175px;
+    bottom: 35px
+}
+
+.Youtube img {
+    width: 40px;
+    bottom: 55px;
+    left: 205px;
+    border: 1px inset var(--MainColour);
+    padding: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.Email {
+    left: 30px;
+    bottom: 12px
+}
+
+/*
+            _________________________________________________________________
+            |||||||               \/ Main Content Area \/             |||||||
+            -----------------------------------------------------------------
+*/
+
+a {
+    color: #FFF;
+}
+
+body {
+    color: #FFF;
+    background-color: #070707;
+    font-family: 'Franklin Gothic', Debug;
+}
+
+.PageContents {
+    position: absolute;
+    left: 312px;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    min-width: 900px;
+}
+
+hr {
+    position: relative;
+    border-color: var(--MainColour);
+    width: 870px;
+    margin: 60px auto 0px auto;
+}
+
+.Border {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 305px;
+    right: 0px;
+    min-width: 845px;
+    margin: auto;
+    outline: 4px double var(--MainColour);
+    border: solid 7px;
+    border-color: var(--Outset);
+}
+
+.PageIntro {
+    position: relative;
+    outline: 1px solid var(--MainColour);
+    margin: auto;
+    top: 30px;
+    width: 1200px;
+    border: solid 10px;
+    border-color: var(--Outset);
+}
+
+.PageIntro * {
+    position: relative;
+    text-decoration: none;
+}
+
+.PageIntro h1,
+h2 {
+    margin: auto;
+    top: 1.25rem;
+    width: fit-content;
+}
+
+.PageIntro p {
+    margin: auto;
+    padding: 2rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.NaughtyDogPatches {
+    position: relative;
+    outline: 1px solid var(--MainColour);
+    margin: 25px auto;
+    top: 30px;
+    width: 800px;
+    border: solid 10px;
+    border-color: var(--Outset);
+}
+
+.NaughtyDogPatches * {
+    position: relative;
+    text-decoration: none;
+}
+
+.NaughtyDogPatches h2 {
+    margin: auto;
+    top: 1.25rem;
+    width: fit-content;
+}
+
+.NaughtyDogPatches p {
+    margin: auto;
+    padding: 2rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+}
