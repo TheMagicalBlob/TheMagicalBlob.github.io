@@ -1,11 +1,21 @@
+body {
+    color: #FFF;
+    background-color: #070707;
+    font-family: 'Franklin Gothic', Debug
+}
+
+a {
+    color: #FFF;
+}
+
 @font-face {
     font-family: Press-Gothic;
-    src: url('/Visuals/Fonts/Press-Gothic.ttf');
+    src: url('Fonts/Press-Gothic.ttf');
 }
 
 @font-face {
     font-family: Debug;
-    src: url('/Visuals/Fonts/debug.ttf')
+    src: url('Fonts/debug.ttf')
 }
 
 :root {
@@ -93,20 +103,10 @@ h1 {
 }
 
 /*
-            _________________________________________________________________
-            |||||||               \/ Main Content Area \/             |||||||
-            -----------------------------------------------------------------
+            __________________________________________________________________________
+            |||||||                        \/ Main Page \/                     |||||||
+            --------------------------------------------------------------------------
 */
-
-a {
-    color: #FFF;
-}
-
-body {
-    color: #FFF;
-    background-color: #070707;
-    font-family: 'Franklin Gothic', Debug;
-}
 
 .PageContents {
     position: absolute;
@@ -137,65 +137,28 @@ hr {
     border-color: var(--Outset);
 }
 
-.PageIntro * {
-    position: relative;
-    text-decoration: none;
-}
-
-.PageIntro {
+.LinkColumns {
     position: relative;
     outline: 1px solid var(--MainColour);
     margin: auto;
     top: 30px;
-    width: fit-content;
-    padding: 1rem 5rem 1rem 1.25rem;
+    width: 850px;
     border: solid 10px;
     border-color: var(--Outset);
 }
 
-.PageIntro h1,
-h2 {
+.LinkColumns * {
+    position: relative;
+    text-decoration: none;
+}
+
+.LinkColumns h2 {
     margin: auto;
     top: 1.25rem;
     width: fit-content;
 }
 
-.PageIntro p {
-    margin: auto;
-    padding-top: 35px;
-    padding-bottom: 15px;
-    text-align: center;
-    font-size: 1.20rem;
-}
-
-.ND {
-    font-family: Press-Gothic;
-    font-size: xx-large;
-    font-weight: 175;
-}
-
-.NaughtyDogPatches {
-    position: relative;
-    outline: 1px solid var(--MainColour);
-    margin: 25px auto;
-    top: 30px;
-    width: 800px;
-    border: solid 10px;
-    border-color: var(--Outset);
-}
-
-.NaughtyDogPatches * {
-    position: relative;
-    text-decoration: none;
-}
-
-.NaughtyDogPatches h2 {
-    margin: auto;
-    top: 1.25rem;
-    width: fit-content;
-}
-
-.NaughtyDogPatches p {
+.LinkColumns p {
     margin: auto;
     padding: 2rem;
     padding-bottom: 1.25rem;
